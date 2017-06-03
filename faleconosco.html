@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/customizado.css" rel="stylesheet">
+        <link rel="icon" href="images/favicon.png">
+        <title>Site | Las Vegas</title>
+    </head>
+    <body>
+        <!-- MENU INICIO -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="las-vegas.html">LAS VEGAS</a></li>
+                        <li><a href="atracoes.html">ATRAÇÕES</a></li>
+                        <li><a href="custos-de-aereo.html">PASSAGEM + HOTEL</a></li>
+                        <li><a href="roteiro.html">ROTEIRO</a></li>
+                        <li><a href="curiosidades.html">CURIOSIDADES</a></li>
+                        <li class="dropdown">
+                            <a  href="dicas" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DICAS <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a data-toggle="modal" data-target="#gastronomia" role="button">GASTRONOMIA</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a data-toggle="modal" data-target="#transporte" role="button">TRANSPORTE</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a data-toggle="modal" data-target="#costumes-locais" role="button">COSTUMES LOCAIS</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a data-toggle="modal" data-target="#idioma-dolar" role="button">IDIOMA | PREÇO DOLAR </a></li>
+                            </ul>
+                        </li>                   
+                        <li class="selecionado"><a href="faleconosco.html">FALE CONOSCO</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- MENU FIM -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <h3>Alguma dúvida ou sugestão? Preencha o formulário abaixo e lhe responderemos em breve!</h3>
+                    <p>Todos os campos devem ser preenchidos para validação do formulário.</p>
+                    <form onsubmit="return validacao()">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone" maxlength="15" onkeypress="return somenteNumero(event)">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Endereço de e-mail</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <p class="help-block">Seu contato está relacionado à:</p>
+                            <input type="radio" name="motivo" value="elogio" id="elogio" checked> Elogio <br>
+                            <input type="radio" name="motivo" value="critica" id="critica"> Crítica <br>
+                            <input type="radio" name="motivo" value="atracoes" id="atracoes"> Atrações <br>
+                            <input type="radio" name="motivo" value="pacotes-de-viagem" id="pacotes-de-viagem"> Pacotes de viagem <br>
+                            <input type="radio" name="motivo" value="roteiro" id="roteiro"> Roteiro <br>
+                            <input type="radio" name="motivo" value="outros" id="outros"> Outros
+                        </div>
+                        <div class="form-group">
+                            <label for="obs">Descrição:</label>
+                            <textarea id="obs" name="obs" class="form-control" cols="50" rows="8" placeholder="Limite máximo de 800 caracteres." maxlength="800" ></textarea>
+                        </div>
+                        <button type="reset" class="btn btn-default btn-danger">Limpar</button>
+                        <button type="submit" class="btn btn-default btn-success">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                Copyright &copy; Site | Las Vegas 2016
+            </p>
+        </footer>
+
+        <!-- Modal Gastronomia -->
+        <div class="modal fade" id="gastronomia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">DICAS - GASTRONOMIA</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Comendo nos buffets de Las Vegas</h4>
+                        <p>Os buffets de comida dos hotéis de Las Vegas são muito conhecidos e visitados por pessoas do mundo inteiro. Para quem estiver lá, é uma ótima opção para comer, pois o valor é fixo e você pode comer o quanto quiser. A maioria dos restaurantes de Las Vegas que tem a opção de buffet servem todas as refeições: café da manhã, almoço e jantar. O grande diferencial é a variedade de opções, pois eles têm comidas de todos os tipos e de todos os cantos do mundo. Como Las Vegas é visitada por pessoas do mundo todo, eles tentam oferecer refeições para todos os gostos. A maioria dos principais hotéis de Las Vegas, que ficam na Las Vegas Strip, possuem esse serviço de self service e você pode ver antes no site do seu hotel que ficará hospedado se ele é um dos participantes.</p>
+                        <p>O valor para tomar café da manhã, almoçar ou jantar nesses restaurantes que oferecem o buffet, acaba valendo a pena, e os preços variam de 15 à 40 dólares. Uma dica é ir de dia da semana que é mais vazio e antes das 13:00, que é o horário que as pessoas costumam almoçar em Las Vegas. Alguns restaurantes participam de um programa chamado Buffet of Buffets onde a pessoa compra um Ticket que permite o acesso a sete buffets diferentes durante 24h. Os restaurantes buffets participantes são os dos hotéis Paris, Harra’s, Rio, Caesars Palace, Flamingo, Bally’s e Planet Holywood. E o melhor de tudo é que a sobremesa está inclusa também e eles possuem uma variedade enorme de bolos, tortas e doces. Essa é uma ótima forma de economizar nas refeições em Las Vegas.</p>
+                        <h4>Ranking oficial dos melhores restaurantes de Las Vegas</h4>
+                        <p>É claro que os melhores restaurantes de Las Vegas são também os mais caros. Classificados como "very expensive", esses restaurantes são comandados por chefs celebridades e considerados os mais chiques da cidade.</p>
+                        <ol>
+                            <li>
+                                <p>
+                                    <strong>Joël Robuchon</strong><br>
+                                    Chef: Claude LeTohic<br>
+                                    Classificação: ★★★★★<br>
+                                    Host hotel: MGM Grand 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Restaurant Guy Savoy</strong><br>
+                                    Chef: Eric Bost<br>
+                                    Classificação: ★★★★★<br>
+                                    Host hotel: Caesars Palace 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Alex</strong><br>
+                                    Chef: Alex Stratta<br>
+                                    Classificação: ★★★★★<br>
+                                    Host hotel: Wynn Las Vegas
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Twist</strong><br>
+                                    Chef: Pascal Sanchez<br>
+                                    Classificação: ★★★★★<br>
+                                    Host hotel: Mandarin Oriental 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Bar Masa</strong><br>
+                                    Chef: Masa Takayama<br>
+                                    Classificação: ★★★★★<br>
+                                    Host hotel: Aria 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>L'Atelier de Joël Robuchon</strong><br>
+                                    Chef: Steve Benjamin<br>
+                                    Classificação: ★★★★★<br>
+                                    Host hotel: MGM Grand 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>RM Seafood</strong><br>
+                                    Chef: Rick Moonen<br>
+                                    Classificação: ★★★★<br>
+                                    Host hotel: Mandalay Bay 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Picasso</strong><br>
+                                    Chef: Julian Serrano<br>
+                                    Classificação: ★★★★<br>
+                                    Host hotel: Bellagio
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Sage</strong><br>
+                                    Chef: Shawn McClain <br>
+                                    Classificação: ★★★★<br>
+                                    Host hotel: Aria
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Bartolotta Ristorante di Mare</strong><br>
+                                    Chef: Paul Bartolotta<br>
+                                    Classificação: ★★★★<br>
+                                    Host hotel: Wynn Las Vegas
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#idioma-dolar"><</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#transporte">></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Transporte -->
+        <div class="modal fade" id="transporte" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel2">DICAS - TRANSPORTE</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Alugar um carro</h4>
+                        <p>Quem puder alugar, realmente é muito bom ter um carro na sua viagem para poder ir para onde quiser a hora que quiser e ter o máximo de conforto e segurança. Recomendamos fortemente aluguel de carro em Vegas, porque dessa forma você pode explorar a cidade e todas as suas atrações da melhor forma possível.  E se você quer ir viajar até o Grand Canyon, ou se quiser esticar seu roteiro até San Francisco ou San Diego, o que muitos brasileiros fazem, vale a pena alugar um carro legal e fazer a viagem. O carro também é recomendado para quem quer fazer compras, visitar os outlets e shoppings, que são mais afastados, para transportar suas compras. Todos os hotéis tem estacionamento gratuito, então você não vai pagar por isso. Além disso, alugar um carro em Las Vegas não é caro, e você consegue um carro ótimo por um bom preço.</p>
+                        <h4>Ônibus</h4>
+                        <p>Os ônibus em Las Vegas e em todo os Estados Unidos são bem melhores dos que os daqui, então podemos esquecer essa impressão de transporte lotado e atrasado, por que lá realmente funciona. Os ônibus "Deuce Bus", que consideramos a melhor opção para turistas, são grandes ônibus de dois andares que passam por toda a Las Vegas Strip 24 horas por dia. Eles têm até ar condicionado e param em praticamente todos os principais hotéis cassinos da cidade. Vale a pena para quem não quer alugar carro nem andar a pé pela Strip. Essa mesma empresa também realiza translados até o Grand Canyon. Tem também outras linhas de ônibus que não operam o tempo todo, como a linha Downtown Express que não é 24 horas e para em menos pontos. O valor para andar de ônibus em Las Vegas é de 5 dólares a passagem e tem também o de 7 dólares, que dá direito a andar de ônibus Deuce durante 24 horas.</p>
+                        <h4>Táxi</h4>
+                        <p>Para quem não está de carro em Las Vegas, o táxi pode ser um ótimo jeito de andar por lá. Os táxis estão por toda a parte e o preço não é caro. Como as atrações são bem próximas, as corridas costumam dar, em média, 10 dólares, então se você estiver em mais de duas pessoas, as vezes sai mais barato pegar um táxi em Las Vegas do que pegar um ônibus ou trem. Vale fazer as contas e o táxi é muito mais confortável. Não se esqueça de dar uma gorjeta ao motorista, e procure ir a um ponto, porque dificilmente os táxis param no meio da rua.</p>
+                        <h4>Trem</h4>
+                        <p>Andar de trem em Las Vegas no Las Vegas Monorail é a opção de transporte de muitas pessoas que não querem alugar um carro por lá. A cidade não é grande e todos os principais hotéis, cassino e atrações estão centralizados na Las Vegas Strip, que é a principal avenida da cidade. O trem Monorail em Las Vegas é ótimo e facilita muito a viagem de quem está por lá. Por mais que seja tudo em uma avenida, a Las Vegas Boulevard é enorme e demora horas para andar de uma ponta à outra. Com o trem, você não se cansa a toa, pode beber a vontade e ainda economiza uma bela grana de táxi.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#gastronomia"><</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#costumes-locais">></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Costumes locais -->
+        <div class="modal fade" id="costumes-locais" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel3">DICAS - COSTUMES LOCAIS</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Não tente pegar táxi acenando a mão, como no Brasil</h4>
+                        <p>Em Las Vegas os táxis estão proibidos de pegar passageiros na rua. Pode agitar os braços, chamar, gritar ou fazer qualquer outra coisa que, se você não estiver numa parada própria para táxi, nenhum taxista irá parar para atendê-lo. Procure por pontos na Las Vegas Blvd ou na entrada de cassinos e shoppings.</p>
+                        <h4>Não espere parcelar suas compras no cartão</h4>
+                        <p>Em Las Vegas (e nos Estados Unidos em geral) não existe o parcelamento de compras no cartão. Tudo o que você for comprar será cobrado de uma única vez. Não existe a prática de dividir em 02, 03, 05, 10 vezes no cartão, portanto é melhor você nem tentar explicar para os atendentes que você quer dividir, pois eles realmente não irão entender. Isso vale para qualquer local, sem exceções.</p>
+                        <h4>Leve hidratante, protetor labial e protetor solar</h4>
+                        <p>Independente da época do ano, Las Vegas possui umidade baixíssima e a pele certamente ficará ressecada. Outra dica útil é ter um colírio ou água boricada sempre à mão, facilitando a umidificação dos olhos.</p>
+                        <h4>Não se engane com as aparências</h4>
+                        <p>Garçonetes, dançarinas e outras moças que estão usando roupas curtas podem não ser nada além de mulheres usando um uniforme de trabalho. Não confunda o trabalho delas e tampouco faça cantadas e propostas indevidas. Há sempre um segurança por perto que ao menor sinal destas moças podem colocá-lo para fora ou, dependendo, podem até mandá-lo para a cadeia.</p>
+                        <h4>Não use sapatos apertados ou que não sejam confortáveis</h4>
+                        <p>Ao chegar em Vegas você vai observar a grande quantidade de pessoas andando de chinelo pelas ruas. Isso é apenas um sinal de que por aqui o conforto deve estar em primeiro lugar.</p>
+                        <h4>Atente-se às leis</h4>
+                        <p>As leis são rigorosas em relação a consumir bebidas alcoólicas, e a idade mínima para consumir é de 21 anos.  Se você for em algum bar, eles sempre vão pedir a sua identidade antes de vender alguma bebida. Agora em relação a dirigir, a idade mínima é de 16 anos.</p>
+                        <h4>Não corra riscos em Las Vegas</h4>
+                        <p>Não compre tickets de shows e baladas de "cambistas" na rua. O barato pode sair caro, pois você corre o risco de não serem verdadeiros.</p>
+                        <h4>Posto de gasolina sem frentista</h4>
+                        <p>Esqueça dos frentistas quando estiver nos Estados Unidos, lá você será responsável em abastecer seu carro. Tudo que você tem que fazer é inserir o cartão de débito ou crédito na bomba que vai abastecer o carro, ou caso seja em dinheiro, é só ir direto para a loja de conveniência e dizer o número da bomba onde está seu carro. Depois é só abastecer e a bomba vai liberar a quantidade certa de gasolina da qual você pagou.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#transporte"><</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#idioma-dolar">></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Idioma | Dolar -->
+        <div class="modal fade" id="idioma-dolar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel4">DICAS - IDIOMA | PREÇO DOLAR</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Idioma em Las Vegas</h4>
+                        <p>Como em todo os Estados Unidos, o idioma oficial de Las Vegas é o <strong>inglês</strong>, mas, devido à sua proximidade com o México, parte dos trabalhadores e habitantes falam espanhol, o que pode facilitar a comunicação para aqueles brasileiros que não falam inglês.</p>
+                        <h4>Valor Dolar</h4>
+                        <img class="img-responsive center-block" src="images/dolar.png" alt="Dolar">
+                        <p>
+                            O valor do dólar turismo que está cotado hoje <strong>(20/11/2016) no valor de R$ 3,5300</strong> é uma informação que tem como fonte o site <a target="blank" href="http://www.valor.com.br/valor-data">Valor Econômico</a>.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#costumes-locais"><</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#gastronomia">></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/formulario.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+</html>

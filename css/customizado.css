@@ -1,0 +1,152 @@
+body {
+    background-color: #000;
+    margin: 0px;
+    padding: 0px;
+}
+.row p {
+    color: #fff;
+}
+.row h1,h2,h3{
+    color: #FFD700;
+}
+.row h4 {
+    color: #FFD700;
+    text-align: center;
+}
+.row li {
+    color: #fff;
+    margin-bottom: 5px;
+}
+.row ol>li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.navbar {
+    margin-left:9%;
+    margin-right: 9%;
+    padding:0px;
+    border-color: #FFD700;
+}
+.container-fluid {
+    padding-left: 7%;
+    padding-right: 5%;
+}
+#menu a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.selecionado a {
+    background-color: #000;
+    color: #fff !important;
+}
+.img {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: #FFD700;
+    border-width: 1px;
+}
+.texto-centro-col {
+    margin-top: 6%;
+}
+.carousel-indicators {
+    z-index: 0;
+}
+.fundo {
+    background-color: #FFF;
+    margin-top: 10px;
+}
+.fundo h3{
+    color: #3CC8F1;
+    padding: 0px;
+    margin: 5px 0px 10px 0px;
+}
+.fundo h3>a {
+    color: #3CC8F1; 
+}
+.fundo h3:hover {
+    text-decoration: underline;
+}
+.fundo p {
+    margin-top: 2px;
+    color: #000;
+
+}
+.fundo:hover {
+    background-color: #e7e7e7;
+}
+.letras-miudas {
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+.link-interno {
+    color: #3CC8F1;
+}
+.link-interno:hover {
+    color: #3CC8F1;
+}
+.modal-body h4 {
+    margin-bottom: 0px;
+}
+.modal-body p {
+    margin-bottom: 15px;
+}
+.modal img {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.modal-body {
+    height: 450px;
+    overflow: auto;
+}
+hr {
+    border-color: #FFD700;
+}
+.well {
+    margin-top: 20px;    
+    font-size: 21px;
+    padding: 10px;
+    border-radius: 0px;
+}
+.letra-maior {
+    font-size: 25px;
+}
+.letra-media {
+    font-size: 18px;
+}
+.col-md-3 img:hover {
+    opacity: 0.9;
+}
+footer {
+    margin-top: 100px;
+    min-height: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    text-align: center;
+}
+footer p {
+    margin:0px;
+    padding: 0px;
+    color: #000;
+}
+.row label {
+    color: #fff;
+    font-weight: normal;
+}
+form {
+    color:#fff;
+}
+textarea {
+    resize: none;
+}
+
+
+
+
+
